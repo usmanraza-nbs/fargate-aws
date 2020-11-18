@@ -1,0 +1,2001 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "pipeline-to-ecr": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://684342963182/us-east-1",
+      "properties": {
+        "templateFile": "pipeline-to-ecr.template.json"
+      },
+      "metadata": {
+        "/pipeline-to-ecr/fargate-dev-workshop-apprepo/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopapprepo09C62F80",
+            "trace": [
+              "new Repository (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:144:27)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/fargate-dev-workshop-apprepo/pipelinetoecrMyPipeline18360B7AEventRule/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopapprepopipelinetoecrMyPipeline18360B7AEventRuleAC4B2024",
+            "trace": [
+              "new Rule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events/lib/rule.js:30:26)",
+              "Repository.onEvent (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:25:22)",
+              "Repository.onStateChange (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:37:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:55:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:95:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:68:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/fargate-dev-workshop/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatedevworkshopDC8556A7",
+            "trace": [
+              "new Repository (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecr/lib/repository.js:160:26)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucketEncryptionKey8BF0A7F3",
+            "trace": [
+              "new Key (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-kms/lib/key.js:186:26)",
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:90:33)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucketEncryptionKeyAlias9D4F8C59",
+            "trace": [
+              "new Alias (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-kms/lib/alias.js:99:26)",
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:96:17)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineArtifactsBucket727923DD",
+            "trace": [
+              "new Bucket (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:435:26)",
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:102:27)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineRoleC0D47CA4",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:112:35)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineRoleDefaultPolicy34F09EFA",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:39:30)",
+              "Bucket.grant (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:321:31)",
+              "Bucket.grantReadWrite (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:273:21)",
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:125:29)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineAED38ECF",
+            "trace": [
+              "new Pipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:115:30)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Source/CodeCommit/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSourceCodeCommitCodePipelineActionRole3B3AD87E",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:384:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:231:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Source/CodeCommit/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSourceCodeCommitCodePipelineActionRoleDefaultPolicyEC1DD3CC",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:39:30)",
+              "Bucket.grant (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:321:31)",
+              "Bucket.grantReadWrite (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-s3/lib/bucket.js:273:21)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:77:24)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/EventsRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineEventsRoleFAB99F32",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "Object.singletonEventRole (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events-targets/lib/util.js:18:18)",
+              "CodePipeline.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:26:52)",
+              "Rule.addTarget (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events/lib/rule.js:79:36)",
+              "Repository.onEvent (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:30:14)",
+              "Repository.onStateChange (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:37:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:55:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:95:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:68:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/EventsRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineEventsRoleDefaultPolicyF045F033",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "Array.forEach (<anonymous>)",
+              "Object.singletonEventRole (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events-targets/lib/util.js:21:22)",
+              "CodePipeline.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events-targets/lib/codepipeline.js:26:52)",
+              "Rule.addTarget (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-events/lib/rule.js:79:36)",
+              "Repository.onEvent (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:30:14)",
+              "Repository.onStateChange (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:37:27)",
+              "Repository.onReferenceUpdated (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:55:27)",
+              "Repository.onCommit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codecommit/lib/repository.js:95:27)",
+              "CodeCommitSourceAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codecommit/source-action.js:68:35)",
+              "CodeCommitSourceAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Lint/DockerLintImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineLintDockerLintImagesCodePipelineActionRole859AFE61",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:384:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:231:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Lint/DockerLintImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineLintDockerLintImagesCodePipelineActionRoleDefaultPolicyAE695748",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:69:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/SecretScan/DockerSecretScanImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSecretScanDockerSecretScanImagesCodePipelineActionRoleA1BC6871",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:384:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:231:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/SecretScan/DockerSecretScanImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineSecretScanDockerSecretScanImagesCodePipelineActionRoleDefaultPolicyB4727F6E",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:69:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Build/DockerBuildImages/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineBuildDockerBuildImagesCodePipelineActionRoleE3845FE2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "Pipeline.getRoleForAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:384:26)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:231:33)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/MyPipeline/Build/DockerBuildImages/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyPipelineBuildDockerBuildImagesCodePipelineActionRoleDefaultPolicy04226057",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "CodeBuildAction.bound (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.js:69:22)",
+              "CodeBuildAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.js:55:21)",
+              "RichAction.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.js:25:28)",
+              "Pipeline._attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:235:41)",
+              "Stage.attachActionToPipeline (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:110:31)",
+              "Stage.addAction (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:69:33)",
+              "new Stage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.js:26:18)",
+              "Pipeline.addStage (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.js:172:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintRoleBA4A0360",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:243:35)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintRoleDefaultPolicyBEB3C41D",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:49:23)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:317:14)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerLint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerLintAE1899AD",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:285:26)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScanRole4D0115A2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:243:35)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScanRoleDefaultPolicy2212C561",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:49:23)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:317:14)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerSecretScan/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerSecretScan0936513F",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:285:26)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildRole2BAC6ED2",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:243:35)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildRoleDefaultPolicy0D649F98",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Role.addToPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:203:21)",
+              "PipelineProject.addToRolePolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:49:23)",
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:317:14)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/DockerBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DockerBuildCFACF599",
+            "trace": [
+              "new Project (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/project.js:285:26)",
+              "new PipelineProject (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.js:15:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/pipeline-to-ecr/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "construct (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    },
+    "ecs-inf-test": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://684342963182/us-east-1",
+      "properties": {
+        "templateFile": "ecs-inf-test.template.json"
+      },
+      "metadata": {
+        "/ecs-inf-test/TheVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPC92636AB0",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:309:25)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1Subnet770D4FF2",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTable17DA183D",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTableAssociationE5186D77",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1DefaultRoute6D26543F",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:662:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:342:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:341:32)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1EIP4412F690",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:777:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1NATGatewayC61D892B",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:775:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2Subnet73F96DA9",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTable3609F42C",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTableAssociationB4B0A733",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2DefaultRouteFEB062B2",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:662:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:342:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:341:32)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2EIP5AAFF9FA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:777:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2NATGatewayB437CFAF",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:775:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3Subnet7C1E748F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3RouteTable679ADB47",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3RouteTableAssociationACA3F606",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PublicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:764:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:518:42)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3DefaultRoute326CE968",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:662:23)",
+              "Vpc.publicSubnets.forEach.publicSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:342:30)",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:341:32)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3EIPE3930834",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:777:27)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PublicSubnet3/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet3NATGateway3A4A718F",
+            "trace": [
+              "PublicSubnet.addNatGateway (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:775:21)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:59:33)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1Subnet571D3690",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableF6513BC2",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableAssociation46F1FFFC",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1DefaultRouteD1B9E467",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:704:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:70:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:64:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2SubnetCC3D7013",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTable9AC81FAC",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTableAssociation336D47D1",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2DefaultRoute52A1F245",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:704:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:70:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:64:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3Subnet69CC2C6F",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:609:24)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3RouteTable1A0D1274",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:625:23)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3RouteTableAssociation50EE5E34",
+            "trace": [
+              "new Subnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:630:9)",
+              "new PrivateSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:799:9)",
+              "availabilityZones.forEach (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:523:43)",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:502:32)",
+              "Vpc.createSubnets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:498:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:330:14)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/PrivateSubnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet3DefaultRoute990F9A2A",
+            "trace": [
+              "PrivateSubnet.addRoute (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:704:23)",
+              "NatGatewayProvider.configureSubnet (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:70:16)",
+              "NatGatewayProvider.configureNat (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/nat.js:64:18)",
+              "Vpc.createNatGateways (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:476:18)",
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:347:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCIGWFA25CC08",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:334:25)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TheVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCVPCGWC9B93E30",
+            "trace": [
+              "new Vpc (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/vpc.js:337:25)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefExecutionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRole13E8686E",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefExecutionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefExecutionRoleDefaultPolicy4626101A",
+            "trace": [
+              "new Policy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/policy.js:49:26)",
+              "Role.addToPrincipalPolicy (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:193:34)",
+              "Function.addToPrincipal (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:82:65)",
+              "Function.addToPrincipalOrResource (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/grant.js:39:30)",
+              "Import.grant (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecr/lib/repository.js:118:26)",
+              "Import.grantPull (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecr/lib/repository.js:130:26)",
+              "EcrImage.bind (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/images/ecr.js:22:25)",
+              "new ContainerDefinition (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/container-definition.js:81:40)",
+              "FargateTaskDefinition.addContainer (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:191:16)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ServiceTaskDefTaskRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ServiceTaskDefTaskRole4A468EED",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/CodeDeployRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CodeDeployRole12BEECBE",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-iam/lib/role.js:62:22)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/ecs-cluster/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ecscluster7830E7B5",
+            "trace": [
+              "new Cluster (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/cluster.js:42:25)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancer25023A58",
+            "trace": [
+              "new BaseLoadBalancer (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.js:31:26)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:24:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/SecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerSecurityGroup2D54D16B",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:193:30)",
+              "new ApplicationLoadBalancer (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:30:56)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/SecurityGroup/to ecsinftestservicesg94443D5E:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerSecurityGrouptoecsinftestservicesg94443D5E80EA1756DA",
+            "trace": [
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:59:13)",
+              "SecurityGroup.addEgressRule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:308:19)",
+              "other.connections._securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:73:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:198:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:72:51)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:198:13)",
+              "Connections.allowTo (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:71:30)",
+              "Connections.allowFrom (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:102:31)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_1/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener1CE676931",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:17:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:29:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:63:16)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_1/load_balancer_target_1Group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener1loadbalancertarget1Group06D2C091",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:35:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:20:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:212:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_2/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener20A0A50DC",
+            "trace": [
+              "new BaseListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.js:17:26)",
+              "new ApplicationListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:29:9)",
+              "ApplicationLoadBalancer.addListener (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.js:63:16)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/load_balancer/load_balancer_listener_2/load_balancer_target_2Group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loadbalancerloadbalancerlistener2loadbalancertarget2Group306D6C94",
+            "trace": [
+              "new TargetGroupBase (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.js:35:25)",
+              "new ApplicationTargetGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.js:20:9)",
+              "ApplicationListener.addTargets (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.js:212:23)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/service_sg/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "servicesgE18B74B7",
+            "trace": [
+              "new SecurityGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:193:30)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/service_sg/from ecsinftestloadbalancerSecurityGroupAD47570C:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "servicesgfromecsinftestloadbalancerSecurityGroupAD47570C807749B771",
+            "trace": [
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:44:13)",
+              "SecurityGroup.addIngressRule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/security-group.js:272:19)",
+              "other.connections._securityGroupRules.forEachAndForever.rule (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:96:31)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:198:13)",
+              "_securityGroups.forEachAndForever.securityGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:95:51)",
+              "ReactiveList.forEachAndForever (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:198:13)",
+              "Connections.allowFrom (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ec2/lib/connections.js:94:30)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/log_group/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "loggroupA5D580CF",
+            "trace": [
+              "new LogGroup (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-logs/lib/log-group.js:142:26)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/fargate_task_definition/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargatetaskdefinitionC3EBDAF7",
+            "trace": [
+              "new TaskDefinition (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/base/task-definition.js:69:25)",
+              "new FargateTaskDefinition (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-task-definition.js:19:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/fargate_service/Service": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "fargateserviceService5FA1A89C",
+            "trace": [
+              "new BaseService (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/base/base-service.js:112:25)",
+              "new FargateService (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-ecs/lib/fargate/fargate-service.js:53:9)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup5xx/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup5xx43EFCD6E",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:66:23)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup25xx/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup25xx2FAF422E",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:66:23)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroupUnhealthyHosts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroupUnhealthyHosts734E7711",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:66:23)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/TargetGroup2UnhealthyHosts/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TargetGroup2UnhealthyHosts9640140F",
+            "trace": [
+              "new Alarm (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/aws-cloudwatch/lib/alarm.js:66:23)",
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/lburl": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "lburl",
+            "trace": [
+              "obj._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:49)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "Kernel._create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3137:26)",
+              "Kernel.create (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2881:21)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/ecs-inf-test/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/metadata-resource.js:22:30)",
+              "construct (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:127:9)",
+              "visit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:181:9)",
+              "visit (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:178:9)",
+              "injectMetadataResources (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:116:5)",
+              "Object.synthesize (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/private/synthesis.js:16:5)",
+              "App.synth (/tmp/jsii-kernel-hZTBQX/node_modules/@aws-cdk/core/lib/stage.js:90:41)",
+              "_wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:51)",
+              "Kernel._wrapSandboxCode (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3621:16)",
+              "ret._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2961:25)",
+              "Kernel._ensureSync (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:3598:20)",
+              "Kernel.invoke (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:2960:26)",
+              "KernelHost.processRequest (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13088:28)",
+              "KernelHost.run (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13026:14)",
+              "Immediate.setImmediate [as _onImmediate] (/usr/local/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:13029:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
